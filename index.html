@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flip Image Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Flip Image</h1>
+        </header>
+        <div class="score-panel">
+            <span class="moves">0</span> Move(s)
+            <div class="timer">
+            </div>
+            <div class="restart" onclick=startGame()>
+                <i class="fa fa-repeat"></i>
+            </div>
+        </div>
+        <ul class="game" id="card-game" style="background-image: url('img/mi.png');background-position: center;">
+            <li class="card" type="nhism">
+                <img src="img/nhism.jpg.fdmdownload" alt="">
+            </li>
+            <li class="card" type="nhism">
+                <img src="img/nhism.jpg.fdmdownload" alt="">
+            </li>
+            <li class="card" type="nhism">
+                <img src="img/nhism.jpg.fdmdownload" alt="">
+            </li>
+            <li class="card" type="nhism">
+                <img src="img/nhism.jpg.fdmdownload" alt="">
+            </li>
+            <li class="card " type="qnt">
+                <img src="img/qnt.jpg" alt="">
+            </li>
+            <li class="card" type="qnt">
+                <img src="img/qnt.jpg" alt="">
+            </li>
+            <li class="card " type="qnt">
+                <img src="img/qnt.jpg" alt="">
+            </li>
+            <li class="card" type="qnt">
+                <img src="img/qnt.jpg" alt="">
+            </li>
+            <li class="card" type="rambo">
+                <img src="img/rambo.jpg" alt="">
+            </li>
+            <li class="card " type="rambo">
+                <img src="img/rambo.jpg" alt="">
+            </li>
+            <li class="card" type="refund">
+                <img src="img/refundd.jpg" alt="">
+            </li>
+            <li class="card" type="refund">
+                <img src="img/refundd.jpg" alt="">
+            </li>
+            <li class="card" type="tungsoi">
+                <img src="img/tungsoi.jpg" alt="">
+            </li>
+            <li class="card" type="tungsoi">
+                <img src="img/tungsoi.jpg" alt="">
+            </li>
+            <li class="card" type="tungsoi">
+                <img src="img/tungsoi.jpg" alt="">
+            </li>
+            <li class="card" type="tungsoi">
+                <img src="img/tungsoi.jpg" alt="">
+            </li>
+            <li class="card" type="viruss">
+                <img src="img/virus.jpg.fdmdownload" alt="">
+            </li>
+            <li class="card" type="viruss">
+                <img src="img/virus.jpg.fdmdownload" alt="">
+            </li>
+            <li class="card " type="xeme">
+                <img src="img/xeme.jpg" alt="">
+            </li>
+            <li class="card " type="xeme">
+                <img src="img/xeme.jpg" alt="">
+            </li>
+            <li class="card" type="mixi">
+                <img src="img/mixi.jpg" alt="">
+            </li>
+            <li class="card" type="mixi">
+                <img src="img/mixi.jpg" alt="">
+            </li>
+            <li class="card" type="mixi">
+                <img src="img/mixi.jpg" alt="">
+            </li>
+            <li class="card" type="mixi">
+                <img src="img/mixi.jpg" alt="">
+            </li>
+        </ul>
+        <div id="congra" class="overlay">
+            <div class="popup">
+                <h2>Congratulations 🎉</h2>
+                <a class="close" href=#>×</a>
+                <div class="content-1">
+                    Congratulations you're a winner 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                </div>
+                <button id="play-again" onclick="playAgain()">
+                    ★★ Play again ★★</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
