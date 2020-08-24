@@ -1,20 +1,19 @@
-// window.onload = function() {
-//     $.getJSON("./data.json", function(data) {
-//         for (var a = 0; i > data.dataJson.length; i++) {
-//             $('.game').innerHTML += `
-//                 <div class="card" id="${data.data[a].id}">
-//                     <img src="${data.data[a].url}" alt="a">
-//                 </div>
-//             `
-//         };
-//     });
-// }
-
 // cards array
 let card = document.getElementsByClassName("card");
 let cards = [...card];
 const game = document.getElementById("card-game");
 
+// $(window).on('load', function() {
+//         $.getJSON("./data.json", function(data) {
+//             $.each(data.dataJson, function(key, val) {
+//                 game.innerHTML += `
+//                 <div class="card" id="${val.id}">
+//                      <img src="${val.url}" alt="a">
+//                  </div>
+//             `
+//             });
+//         });
+//     })
 // move
 let moves = 0;
 let counter = document.querySelector(".moves");
@@ -84,6 +83,7 @@ var displayCard = function() {
     this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
+
 
 // add opened cards to OpenedCards and check match or not
 function cardOpen() {

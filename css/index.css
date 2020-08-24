@@ -72,6 +72,7 @@ h1 {
 .game .card.show img {
     width: 130px;
     height: 130px;
+    border-radius: 5px;
 }
 
 .game .card img {
