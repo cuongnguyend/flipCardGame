@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: cursive;
 }
 
 .game {
@@ -85,7 +85,7 @@ h1 {
     animation-name: rubberBand;
     visibility: visible;
     animation-duration: .75s;
-    opacity: 0.3 !important;
+    opacity: 0.8 !important;
 }
 
 .game .card.match img {
@@ -188,7 +188,7 @@ h1 {
     display: block;
     margin: 0 auto;
     width: 50%;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: cursive;
     color: #ffffff;
     border-radius: 5px;
 }

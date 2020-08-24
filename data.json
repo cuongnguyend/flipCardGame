@@ -1,67 +1,99 @@
 {
-    "data": [{
+    "dataJson": [{
             "url": "img/nhism.jpg.fdmdownload",
-            "type": "nhism"
+            "id": "nhism"
         },
         {
             "url": "img/nhism.jpg.fdmdownload",
-            "type": "nhism"
+            "id": "nhism"
+        },
+        {
+            "url": "img/nhism.jpg.fdmdownload",
+            "id": "nhism"
+        },
+        {
+            "url": "img/nhism.jpg.fdmdownload",
+            "id": "nhism"
         },
         {
             "url": "img/qnt.jpg",
-            "type": "qnt"
+            "id": "qnt"
         },
         {
             "url": "img/qnt.jpg",
-            "type": "qnt"
+            "id": "qnt"
+        },
+        {
+            "url": "img/qnt.jpg",
+            "id": "qnt"
+        },
+        {
+            "url": "img/qnt.jpg",
+            "id": "qnt"
         },
         {
             "url": "img/rambo.jpg",
-            "type": "rambo"
+            "id": "rambo"
         },
         {
             "url": "img/rambo.jpg",
-            "type": "rambo"
+            "id": "rambo"
         },
         {
-            "url": "img/refund.jpg",
-            "type": "refund"
+            "url": "img/refundd.jpg",
+            "id": "refund"
         },
         {
-            "url": "img/refund.jpg",
-            "type": "refund"
-        },
-        {
-            "url": "img/tungsoi.jpg",
-            "type": "tungsoi"
+            "url": "img/refundd.jpg",
+            "id": "refund"
         },
         {
             "url": "img/tungsoi.jpg",
-            "type": "tungsoi"
+            "id": "tungsoi"
         },
         {
-            "url": "img/viruss.jpg",
-            "type": "viruss"
+            "url": "img/tungsoi.jpg",
+            "id": "tungsoi"
         },
         {
-            "url": "img/viruss.jpg",
-            "type": "viruss"
+            "url": "img/tungsoi.jpg",
+            "id": "tungsoi"
+        },
+        {
+            "url": "img/tungsoi.jpg",
+            "id": "tungsoi"
+        },
+        {
+            "url": "img/virus.jpg.fdmdownload",
+            "id": "viruss"
+        },
+        {
+            "url": "img/virus.jpg.fdmdownload",
+            "id": "viruss"
         },
         {
             "url": "img/xeme.jpg",
-            "type": "xeme"
+            "id": "xeme"
         },
         {
             "url": "img/xeme.jpg",
-            "type": "xeme"
+            "id": "xeme"
         },
         {
-            "url": "img/luongcb.jpg",
-            "type": "mixi"
+            "url": "img/mixi.jpg",
+            "id": "mixi"
         },
         {
-            "url": "img/luongcb.jpg",
-            "type": "mixi"
+            "url": "img/mixi.jpg",
+            "id": "mixi"
+        },
+        {
+            "url": "img/mixi.jpg",
+            "id": "mixi"
+        },
+        {
+            "url": "img/mixi.jpg",
+            "id": "mixi"
         }
     ]
 }

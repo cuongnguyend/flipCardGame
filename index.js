@@ -1,4 +1,15 @@
-var card_game = document.getElementById('card-game');
+// window.onload = function() {
+//     $.getJSON("./data.json", function(data) {
+//         for (var a = 0; i > data.dataJson.length; i++) {
+//             $('.game').innerHTML += `
+//                 <div class="card" id="${data.data[a].id}">
+//                     <img src="${data.data[a].url}" alt="a">
+//                 </div>
+//             `
+//         };
+//     });
+// }
+
 // cards array
 let card = document.getElementsByClassName("card");
 let cards = [...card];
@@ -19,7 +30,6 @@ let modal = document.getElementById("congra");
 
 // open cards
 var openedCards = [];
-
 
 // random array 
 function random(array) {
@@ -42,6 +52,7 @@ document.body.onload = startGame();
 
 // start Game 
 function startGame() {
+
     openedCards = [];
     cards = random(cards);
 
@@ -58,7 +69,7 @@ function startGame() {
     moves = 0;
     counter.innerHTML = moves;
 
-    //reset timer
+    // reset timer
     second = 0;
     minute = 0;
     hour = 0;
@@ -67,22 +78,20 @@ function startGame() {
     clearInterval(interval);
 }
 
-
-// @description toggles open and show class to display cards
+// display cards    
 var displayCard = function() {
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
 
-
-// @description add opened cards to OpenedCards list and check if cards are match or not
+// add opened cards to OpenedCards and check match or not
 function cardOpen() {
     openedCards.push(this);
     var len = openedCards.length;
     if (len === 2) {
         moveCounter();
-        if (openedCards[0].type === openedCards[1].type) {
+        if (openedCards[0].id === openedCards[1].id) {
             matched();
         } else {
             unmatched();
@@ -93,8 +102,8 @@ function cardOpen() {
 function matched() {
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
-    openedCards[0].classList.remove("show", "open", "no-event");
-    openedCards[1].classList.remove("show", "open", "no-event");
+    openedCards[0].classList.remove("show", "open");
+    openedCards[1].classList.remove("show", "open");
     openedCards = [];
 }
 
@@ -103,21 +112,21 @@ function unmatched() {
     openedCards[1].classList.add("unmatched");
     disable();
     setTimeout(function() {
-        openedCards[0].classList.remove("show", "open", "no-event", "unmatched");
-        openedCards[1].classList.remove("show", "open", "no-event", "unmatched");
+        openedCards[0].classList.remove("show", "open", "unmatched");
+        openedCards[1].classList.remove("show", "open", "unmatched");
         enable();
         openedCards = [];
     }, 1100);
 }
 
-// @description disable cards temporarily
+// disable cards temporarily
 function disable() {
     Array.prototype.filter.call(cards, function(card) {
         card.classList.add('disabled');
     });
 }
 
-// @description enable cards and disable matched cards
+// enable cards and disable matched cards
 function enable() {
     Array.prototype.filter.call(cards, function(card) {
         card.classList.remove('disabled');
@@ -140,7 +149,7 @@ function moveCounter() {
     }
 }
 
-// @description game timer
+// time
 var second = 0,
     minute = 0;
 hour = 0;
@@ -162,7 +171,6 @@ function startTimer() {
     }, 1000);
 }
 
-
 function congratulations() {
     if (matchedCard.length == 24) {
         clearInterval(interval);
@@ -177,7 +185,6 @@ function congratulations() {
     };
 }
 
-
 // close modal
 function closeModal() {
     closeicon.addEventListener("click", function(e) {
@@ -186,13 +193,11 @@ function closeModal() {
     });
 }
 
-
-// @desciption for user to play Again 
+// play Again 
 function playAgain() {
     modal.classList.remove("show");
     startGame();
 }
-
 
 // add event to each card
 for (var i = 0; i < cards.length; i++) {
